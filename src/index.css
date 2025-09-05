@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #dbeff1;
+  --color-primary-100: #b8e0e2;
+  --color-primary-200: #8eced0;
+  --color-primary-300: #5dbbbd;
+  --color-primary-400: #34a8a9;
+  --color-primary-500: #14948f; /* Darker Base */
+  --color-primary-600: #117f7a;
+  --color-primary-700: #0d6a66;
+  --color-primary-800: #0a5552;
+  --color-primary-900: #073f3d;
+  --color-accent-50: #e2f7fb;
+  --color-accent-100: #ffece8;
+  --color-accent-200: #ffd0c5;
+  --color-accent-300: #ffb3a1;
+  --color-accent-400: #ff8f75;
+  --color-accent-500: #ff603a; /* Base */
+  --color-accent-600: #e7441d;
+  --color-accent-700: #c42700;
+  --color-accent-800: #a12000;
+  --color-accent-900: #701700;
+  --font-nunito: 'Nunito Variable';
+  --font-merriweather: 'Merriweather';
+  --font-outfit: 'Outfit';
+  --rounded-input-sm: 5px;
+  --rounded-input-md: 8px;
+  --rounded-input-lg: 10px;
+  --input-box-shadow: 0px 0px 5px -1px var(--grey-color-600);
+  --input-box-shadow-sm: 0px 0px 5px -1px var(--grey-color-600);
+  --input-box-shadow-focus: 0px 0px 8px 0px var(--grey-color-600);
+  --input-box-shadow-sm-focus: 0px 0px 8px 0px var(--grey-color-600);
+  --form-shadow: 0px 0px 20px 1px rgba(219, 219, 219, 1);
+  --flight-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  --flight-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
