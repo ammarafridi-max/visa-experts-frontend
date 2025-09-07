@@ -29,16 +29,16 @@ export default function Process() {
           Get Your Visa in 4 Easy Steps
         </SectionTitle>
 
-        <div className="flex gap-3.75 md:grid md:grid-cols-4 md:m-0 md:p-0 overflow-scroll">
+        <div className="block gap-3.75 md:grid md:grid-cols-4 md:m-0 md:p-0">
           {steps.map((step, i) => (
             <div
-              className="min-w-[260px] md:min-w-10 max-w-full rounded-lg duration-300"
+              className="min-w-full md:min-w-10 max-w-full mb-8 md:mb-0 last-of-type:mb-0 rounded-lg duration-300"
               key={i}
             >
               <div className="w-10 h-10 bg-gray-900 text-white text-md font-medium font-outfit flex items-center justify-center rounded-4xl">
                 {i + 1}
               </div>
-              <h3 className="text-[18px] font-[500] font-outfit text-left mt-4 mb-2.5 p-0 capitalize">
+              <h3 className="text-[18px] font-[500] font-outfit text-left mt-2 mb-1 md:mt-3 md:mb-2 p-0 capitalize">
                 {step.title}
               </h3>
               <p className="text-[16.5px] font-light font-outfit text-left">

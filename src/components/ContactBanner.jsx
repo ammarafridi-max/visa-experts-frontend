@@ -8,7 +8,7 @@ export default function ContactBanner({}) {
     <PrimarySection className="py-15 bg-gray-200">
       <Container>
         <div className="flex flex-col items-center gap-3">
-          <p className="font-outfit text-xl">
+          <p className="font-outfit text-xl text-center">
             Ready to apply? Got more questions? We're here to help you every
             step of the way. Contact us now!
           </p>

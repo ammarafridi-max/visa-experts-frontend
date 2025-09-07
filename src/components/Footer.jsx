@@ -4,7 +4,6 @@ import {
   FaApplePay,
   FaCcVisa,
   FaCcMastercard,
-  FaPhone,
   FaPhoneAlt,
   FaEnvelope,
   FaMapPin,
@@ -16,9 +15,9 @@ export default function Footer() {
   return (
     <footer className="py-5 bg-primary-900">
       <Container className="py-7.5 bg-transparent box-border font-outfit">
-        <div className="flex justify-between gap-8 mb-10">
-          <div className="w-[100%] md:w-[30%]"></div>
-          <div className="w-[100%] md:w-[20%]">
+        <div className="grid grid-cols-6 md:flex justify-between gap-8 mb-10">
+          <div className="col-span-6 md:w-[20%]"></div>
+          <div className="col-span-3 md:w-fit">
             <p className="text-xl text-white">Site Links</p>
             <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-0.5">
               <FooterLink>Home</FooterLink>
@@ -27,7 +26,7 @@ export default function Footer() {
               <FooterLink>Benefits</FooterLink>
             </div>
           </div>
-          <div className="w-full md:w-[20%]">
+          <div className="col-span-3 md:w-fit">
             <p className="text-xl text-white">Visas</p>
             <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-0.5">
               <FooterLink>Schengen Visa</FooterLink>
@@ -37,7 +36,7 @@ export default function Footer() {
               <FooterLink>Australia Visa</FooterLink>
             </div>
           </div>
-          <div className="w-[100%] md:w-[30%]">
+          <div className="col-span-6 md:w-fit">
             <p className="text-xl text-white">Contact Us</p>
             <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-3">
               <IconCard icon={<FaPhoneAlt />} href="tel:971506045355">

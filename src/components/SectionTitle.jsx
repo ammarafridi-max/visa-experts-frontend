@@ -15,7 +15,7 @@ export default function SectionTitle({
         </p>
       )}
       <h2
-        className={`text-[28px] md:text-[36px] text-black font-medium font-outfit text-left leading-9 ${textAlign === 'center' ? 'md:text-center' : 'md:text-left'}`}
+        className={`text-[28px] md:text-[36px] text-black font-medium font-outfit text-left leading-8 ${textAlign === 'center' ? 'md:text-center' : 'md:text-left'}`}
       >
         {children}
       </h2>
