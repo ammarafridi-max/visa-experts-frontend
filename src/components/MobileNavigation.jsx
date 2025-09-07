@@ -7,14 +7,14 @@ export default function MobileNavigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="block lg:hidden py-3 relative z-50">
+    <nav className="block lg:hidden py-3 relative z-50 shadow-sm">
       <Container className="flex justify-between items-center">
         <a href="/" className="w-40 h-auto flex items-center">
           <img
             src="/logo.webp"
             alt="My Dummy Ticket Logo"
             title="My Dummy Ticket Logo"
-            className="w-full h-auto object-contain"
+            className="w-[200px] h-[50px] object-contain"
           />
         </a>
         <button onClick={() => setMenuOpen(!menuOpen)} name="mobileMenu">

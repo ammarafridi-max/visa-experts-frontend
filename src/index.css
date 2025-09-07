@@ -23,7 +23,7 @@
   --color-accent-900: #701700;
   --font-nunito: 'Nunito Variable';
   --font-merriweather: 'Merriweather';
-  --font-outfit: 'Outfit';
+  --font-outfit: 'Outfit Variable', sans-serif;
   --rounded-input-sm: 5px;
   --rounded-input-md: 8px;
   --rounded-input-lg: 10px;

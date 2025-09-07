@@ -1,23 +1,29 @@
 import PrimarySection from '../PrimarySection';
 import Container from '../Container';
 import PageTitle from '../PageTitle';
+import PrimaryButton from '../PrimaryButton';
+import PrimaryButtonOutline from '../PrimaryButtonOutline';
 
 export default function Hero({
-  title = 'Flight Reservations From AED49. Verifiable and Legit.',
-  subtitle = 'Book verifiable flight reservations for visa applications. All legitimate reservations come with a PNR code that can be verified directly on airline websites.',
+  title = 'Hassle-Free Visa Assistance for Schengen, US, UK & More.',
+  subtitle = 'Get expert guidance, fast approvals, and end-to-end support for your travel visa. Whether it’s business, study, or tourism – VisaExperts makes the process simple and stress-free.',
 }) {
   return (
-    <PrimarySection className="py-1" id="form">
-      <Container className="block lg:flex py-2.5 lg:py-7.5 items-center justify-between gap">
-        <div className="w-full lg:w-[55%]">
-          <PageTitle>{title}</PageTitle>
-          <p className="text-[17px] lg:text-[20px] font-regular lg:font-light mt-4 mb-7">
-            {subtitle}
-          </p>
-        </div>
-        <div className="w-full lg:w-[45%] bg-white rounded-2xl ">
-        </div>
-      </Container>
+    <PrimarySection className="bg-[url(/hero-bg.png)]" id="form">
+      <div className="py-10 md:py-20 bg-[rgba(7,63,61,0.9)]">
+        <Container>
+          <div className="w-full md:max-w-[1000px] md:mx-auto">
+            <PageTitle className="text-center text-white">{title}</PageTitle>
+            <p className="text-[16px] md:text-[18px] text-center text-white font-extralight font-outfit lg:font-light mt-6 mb-7">
+              {subtitle}
+            </p>
+            <div className="flex items-center gap-2 justify-center">
+              <PrimaryButton>Chat With Us</PrimaryButton>
+              <PrimaryButtonOutline>See Our Services</PrimaryButtonOutline>
+            </div>
+          </div>
+        </Container>
+      </div>
     </PrimarySection>
   );
 }
