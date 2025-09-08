@@ -5,7 +5,7 @@ import VisaCard from '../VisaCard';
 
 export default function Visas() {
   return (
-    <PrimarySection className="pb-15 md:pb-20">
+    <PrimarySection className="mb-15 md:mb-20">
       <Container>
         <SectionTitle
           textAlign="center"
@@ -14,7 +14,7 @@ export default function Visas() {
         >
           Visas We Can Help You With
         </SectionTitle>
-        <div className="flex items-center justify-between gap-4 overflow-scroll">
+        <div className="flex items-center justify-between gap-5 overflow-scroll">
           <VisaCard
             name="Schengen Visa"
             description="Travel across 27 countries with one visa. Perfect for tourism & business"

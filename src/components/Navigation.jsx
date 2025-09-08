@@ -4,7 +4,7 @@ import Container from './Container';
 export const pages = [
   { name: 'Process', link: '/#process' },
   { name: 'Services', link: '/#services' },
-  { name: 'Why Choose Visa Experts', link: '/#benefits' },
+  { name: 'Why Choose VisaWadi', link: '/#benefits' },
   { name: 'FAQs', link: '/#faq' },
 ];
 

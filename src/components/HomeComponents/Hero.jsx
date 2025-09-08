@@ -9,8 +9,8 @@ export default function Hero({
   subtitle = 'Get expert guidance, fast approvals, and end-to-end support for your travel visa. Whether it’s business, study, or tourism – VisaExperts makes the process simple and stress-free.',
 }) {
   return (
-    <PrimarySection className="bg-[url(/hero-bg.png)]" id="form">
-      <div className="py-10 md:py-20 bg-[rgba(7,63,61,0.9)]">
+    <PrimarySection className="bg-[url(/hero-bg.png)] mb-15 md:mb-20" id="form">
+      <div className="py-10 md:py-25 bg-[rgba(7,63,61,0.95)]">
         <Container>
           <div className="w-full md:max-w-[1000px] md:mx-auto">
             <PageTitle className="text-center text-white">{title}</PageTitle>

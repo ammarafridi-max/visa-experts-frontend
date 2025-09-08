@@ -9,7 +9,7 @@ import SectionTitle from '../SectionTitle';
 
 export default function Benefits({ keyword = 'dummy ticket' }) {
   return (
-    <PrimarySection className="pb-20" id="benefits">
+    <PrimarySection className="mb-15 md:mb-20" id="benefits">
       <Container>
         <SectionTitle
           textAlign="center"
@@ -18,7 +18,7 @@ export default function Benefits({ keyword = 'dummy ticket' }) {
         >
           Why Travelers Trust VisaExperts
         </SectionTitle>
-        <div className="block md:grid md:grid-cols-3 gap-10">
+        <div className="block md:grid md:grid-cols-3 gap-8">
           <IconCard
             icon={<HiCheck />}
             title="Expert Guidance"
@@ -46,10 +46,10 @@ function IconCard({ icon, title, text }) {
       <div className="w-fit text-3xl text-primary-500 flex items-center justify-center bg-primary-50 p-3.75 mx-auto rounded-full overflow-hidden">
         {icon}
       </div>
-      <h3 className="text-lg mt-4 mb-2 p-0 font-bold font-outfit md:text-[18px]">
+      <h3 className="text-lg mt-4 mb-2 p-0 font-normal font-outfit md:text-[18px]">
         {title}
       </h3>
-      <p className="text-center text-[17px] font-light font-outfit leading-6">
+      <p className="text-center text-[17px] font-extralight font-outfit leading-6">
         {text}
       </p>
     </div>

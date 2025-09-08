@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-primary-50: #dbeff1;
@@ -42,5 +42,5 @@
 
 body {
   overflow-x: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 253, 253);
 }

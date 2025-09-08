@@ -23,25 +23,25 @@ const steps = [
 
 export default function Process() {
   return (
-    <PrimarySection className="py-15 md:py-20" id="process">
+    <PrimarySection className="mb-15 md:mb-20" id="process">
       <Container>
-        <SectionTitle textAlign="center" subtitle="How it Works" className="">
+        <SectionTitle textAlign="center" subtitle="Our Process" className="">
           Get Your Visa in 4 Easy Steps
         </SectionTitle>
 
-        <div className="block gap-3.75 md:grid md:grid-cols-4 md:m-0 md:p-0">
+        <div className="block gap-5 md:grid md:grid-cols-4 md:m-0 md:p-0">
           {steps.map((step, i) => (
             <div
               className="min-w-full md:min-w-10 max-w-full mb-8 md:mb-0 last-of-type:mb-0 rounded-lg duration-300"
               key={i}
             >
-              <div className="w-10 h-10 bg-gray-900 text-white text-md font-medium font-outfit flex items-center justify-center rounded-4xl">
+              <div className="w-10 h-10 bg-primary-100 text-primary-700 text-md font-bold font-outfit flex items-center justify-center rounded-4xl">
                 {i + 1}
               </div>
-              <h3 className="text-[18px] font-[500] font-outfit text-left mt-2 mb-1 md:mt-3 md:mb-2 p-0 capitalize">
+              <h3 className="text-[18px] font-normal font-outfit text-left mt-2 mb-1 md:mt-3 md:mb-2 p-0 capitalize">
                 {step.title}
               </h3>
-              <p className="text-[16.5px] font-light font-outfit text-left">
+              <p className="text-[16.5px] font-extralight font-outfit text-left">
                 {step.text}
               </p>
             </div>
