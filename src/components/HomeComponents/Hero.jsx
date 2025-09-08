@@ -10,7 +10,7 @@ export default function Hero({
 }) {
   return (
     <PrimarySection className="bg-[url(/hero-bg.png)] mb-15 md:mb-20" id="form">
-      <div className="py-10 md:py-25 bg-[rgba(7,63,61,0.95)]">
+      <div className="py-10 md:py-25 bg-[rgba(17,6,34,0.8)]">
         <Container>
           <div className="w-full md:max-w-[1000px] md:mx-auto">
             <PageTitle className="text-center text-white">{title}</PageTitle>

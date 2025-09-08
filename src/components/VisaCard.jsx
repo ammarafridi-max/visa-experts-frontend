@@ -1,8 +1,8 @@
-import PrimaryButton from './PrimaryButton';
+import PrimaryButtonOutline from './PrimaryButtonOutline';
 
 export default function VisaCard({ name, description, src }) {
   return (
-    <div className="min-w-[300px] min-h-[330px] md:min-w-0 md:min-h-0 md:w-[25%] md:h-[330px] bg-gray-200 rounded-3xl relative overflow-hidden cursor-pointer group">
+    <div className="min-w-[300px] min-h-[330px] md:min-w-0 md:min-h-0 md:w-[100%] md:h-[330px] bg-gray-200 rounded-3xl relative overflow-hidden cursor-pointer group">
       <img
         src={src}
         className="absolute inset-0 w-full h-full object-cover object-center"
@@ -12,7 +12,7 @@ export default function VisaCard({ name, description, src }) {
         <p className="text-[14px] text-white font-extralight mb-3">
           {description}
         </p>
-        <PrimaryButton className="py-2">Get More Info</PrimaryButton>
+        <PrimaryButtonOutline size="small">Get More Info</PrimaryButtonOutline>
       </div>
     </div>
   );

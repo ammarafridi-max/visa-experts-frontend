@@ -14,7 +14,7 @@ export default function Visas() {
         >
           Visas We Can Help You With
         </SectionTitle>
-        <div className="flex items-center justify-between gap-5 overflow-scroll">
+        <div className="flex md:grid md:grid-cols-4 items-center justify-between gap-5 overflow-scroll">
           <VisaCard
             name="Schengen Visa"
             description="Travel across 27 countries with one visa. Perfect for tourism & business"
@@ -32,6 +32,26 @@ export default function Visas() {
           />
           <VisaCard
             name="Canada Visa"
+            description="Explore Canada for study, work, or travel."
+            src="/canada-visa.png"
+          />
+          <VisaCard
+            name="Turkiye Visa"
+            description="Explore Canada for study, work, or travel."
+            src="/canada-visa.png"
+          />
+          <VisaCard
+            name="Dubai Visa"
+            description="Explore Canada for study, work, or travel."
+            src="/canada-visa.png"
+          />
+          <VisaCard
+            name="Saudi Arabia Visa"
+            description="Explore Canada for study, work, or travel."
+            src="/canada-visa.png"
+          />
+          <VisaCard
+            name="China Visa"
             description="Explore Canada for study, work, or travel."
             src="/canada-visa.png"
           />

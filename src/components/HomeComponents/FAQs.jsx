@@ -7,10 +7,10 @@ import PrimaryButton from '../PrimaryButton';
 
 export default function FAQs() {
   return (
-    <PrimarySection className="pb-15 md:mb-20">
+    <PrimarySection className="mb-15 md:mb-20">
       <Container>
-        <SectionTitle textAlign="center" subtitle="Common Questions">
-          Everything You Need to Know About Visas
+        <SectionTitle textAlign="center" subtitle="Frequently Asked Questions">
+          Your Visa Questions, Answered Simply
         </SectionTitle>
         {faqs.map((faq, i) => {
           if (i < 6) {
