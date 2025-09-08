@@ -20,7 +20,7 @@ export default function Layout() {
 
 function WhatsAppChat() {
   return (
-    <button className="flex items-center gap-2 fixed bottom-5 right-5 bg-[#25d366] z-10 text-white font-outfit py-3 px-7 rounded-full">
+    <button className="flex items-center gap-2 fixed bottom-5 right-5 bg-[#25d366] hover:bg-[#21bd5b] duration-300 cursor-pointer z-10 text-white font-outfit py-3 px-7 rounded-full">
       <FaWhatsapp className="text-2xl" />
       <span>Chat With Us</span>
     </button>

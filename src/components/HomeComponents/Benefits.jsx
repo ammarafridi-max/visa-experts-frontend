@@ -11,11 +11,7 @@ export default function Benefits({ keyword = 'dummy ticket' }) {
   return (
     <PrimarySection className="mb-15 md:mb-20" id="benefits">
       <Container>
-        <SectionTitle
-          textAlign="center"
-          subtitle="Why choose us"
-          className="mb-15"
-        >
+        <SectionTitle textAlign="center" subtitle="Why choose us">
           Why Travelers Trust VisaExperts
         </SectionTitle>
         <div className="block md:grid md:grid-cols-3 gap-8">
@@ -42,14 +38,14 @@ export default function Benefits({ keyword = 'dummy ticket' }) {
 
 function IconCard({ icon, title, text }) {
   return (
-    <div className="w-full mb-12 text-center md:mb-0">
-      <div className="w-fit text-3xl text-primary-500 flex items-center justify-center bg-primary-50 p-3.75 mx-auto rounded-full overflow-hidden">
+    <div className="w-full mb-6 md:mb-0 text-left md:text-center">
+      <div className="w-fit text-2xl md:text-3xl text-primary-500 flex items-center justify-center bg-primary-50 p-3 md:p-3.75 mr-auto md:mx-auto rounded-full overflow-hidden">
         {icon}
       </div>
       <h3 className="text-lg mt-4 mb-2 p-0 font-normal font-outfit md:text-[18px]">
         {title}
       </h3>
-      <p className="text-center text-[17px] font-extralight font-outfit leading-6">
+      <p className="text-[17px] font-extralight font-outfit leading-6">
         {text}
       </p>
     </div>

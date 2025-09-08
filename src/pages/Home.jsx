@@ -1,4 +1,5 @@
 import Benefits from '../components/HomeComponents/Benefits';
+import FAQs from '../components/HomeComponents/FAQs';
 import Hero from '../components/HomeComponents/Hero';
 import Process from '../components/HomeComponents/Process';
 import Testimonials from '../components/HomeComponents/Testimonials';
@@ -13,6 +14,7 @@ export default function Home() {
       <Visas />
       <Benefits />
       <Testimonials />
+      <FAQs />
     </>
   );
 }
