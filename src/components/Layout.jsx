@@ -11,7 +11,6 @@ export default function Layout() {
       <Navigation />
       <MobileNavigation />
       <Outlet />
-      <ContactBanner />
       <Footer />
       <WhatsAppChat />
     </>

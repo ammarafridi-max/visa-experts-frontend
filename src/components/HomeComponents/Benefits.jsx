@@ -7,12 +7,15 @@ import Container from '../Container';
 import PrimarySection from '../PrimarySection';
 import SectionTitle from '../SectionTitle';
 
-export default function Benefits({ keyword = 'dummy ticket' }) {
+export default function Benefits({
+  title = 'Why Travelers Trust VisaExperts',
+  visa = 'visa',
+}) {
   return (
     <PrimarySection className="mb-15 md:mb-20" id="benefits">
       <Container>
         <SectionTitle textAlign="center" subtitle="Why choose us">
-          Why Travelers Trust VisaExperts
+          {title}
         </SectionTitle>
         <div className="block md:grid md:grid-cols-3 gap-8">
           <IconCard
@@ -23,7 +26,7 @@ export default function Benefits({ keyword = 'dummy ticket' }) {
           <IconCard
             icon={<HiOutlineClock />}
             title="High Success Rate"
-            text={`Thousands of travelers have successfully secured visas with us, thanks to our detailed document checks and personalized support at every stage.`}
+            text={`Thousands of travelers have successfully secured ${visa}s with us, thanks to our detailed document checks and personalized support at every stage.`}
           />
           <IconCard
             icon={<HiOutlineCurrencyDollar />}

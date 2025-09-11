@@ -1,3 +1,4 @@
+import ContactBanner from '../components/ContactBanner';
 import Benefits from '../components/HomeComponents/Benefits';
 import FAQs from '../components/HomeComponents/FAQs';
 import Hero from '../components/HomeComponents/Hero';
@@ -15,6 +16,7 @@ export default function Home() {
       <Benefits />
       <Testimonials />
       <FAQs />
+      <ContactBanner />
     </>
   );
 }

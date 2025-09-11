@@ -1,6 +1,6 @@
-import PrimaryButtonOutline from './PrimaryButtonOutline';
+import PrimaryLinkOutline from './PrimaryLinkOutline';
 
-export default function VisaCard({ name, description, src }) {
+export default function VisaCard({ slug, name, description, src }) {
   return (
     <div className="min-w-[300px] min-h-[330px] md:min-w-0 md:min-h-0 md:w-[100%] md:h-[330px] bg-gray-200 rounded-3xl relative overflow-hidden cursor-pointer group">
       <img
@@ -12,7 +12,9 @@ export default function VisaCard({ name, description, src }) {
         <p className="text-[14px] text-white font-extralight mb-3">
           {description}
         </p>
-        <PrimaryButtonOutline size="small">Get More Info</PrimaryButtonOutline>
+        <PrimaryLinkOutline size="small" to={`visas/${slug}`}>
+          Get More Info
+        </PrimaryLinkOutline>
       </div>
     </div>
   );

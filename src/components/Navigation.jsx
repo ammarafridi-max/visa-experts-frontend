@@ -4,13 +4,14 @@ import Container from './Container';
 export const pages = [
   { name: 'Process', link: '/#process' },
   { name: 'Services', link: '/#services' },
+  { name: 'Visas', link: '/visas' },
   { name: 'Why Choose VisaWadi', link: '/#benefits' },
   { name: 'FAQs', link: '/#faq' },
 ];
 
 export default function Navigation() {
   return (
-    <header className="hidden lg:block bg-transparent py-2 shadow-md">
+    <header className="hidden lg:block relative z-50 bg-transparent py-2 shadow-md">
       <Container>
         <nav className="flex items-center justify-between py-1.25">
           <div className="w-[21%] p-0">

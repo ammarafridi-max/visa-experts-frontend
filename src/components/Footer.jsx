@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="col-span-6 md:w-[20%]"></div>
           <div className="col-span-3 md:w-fit">
             <p className="text-xl text-white">Site Links</p>
-            <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-0.5">
+            <div className="flex flex-col mt-4 text-white text-md md:text-lg font-extralight gap-0.5">
               <FooterLink>Home</FooterLink>
               <FooterLink>About</FooterLink>
               <FooterLink>Services</FooterLink>
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div className="col-span-3 md:w-fit">
             <p className="text-xl text-white">Visas</p>
-            <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-0.5">
+            <div className="flex flex-col mt-4 text-white text-md md:text-lg font-extralight gap-0.5">
               <FooterLink>Schengen Visa</FooterLink>
               <FooterLink>US Visa (B1/B2)</FooterLink>
               <FooterLink>UK Tourist Visa</FooterLink>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
           <div className="col-span-6 md:w-fit">
             <p className="text-xl text-white">Contact Us</p>
-            <div className="flex flex-col mt-4 text-white text-lg font-extralight gap-3">
+            <div className="flex flex-col mt-4 text-white text-md md:text-lg font-extralight gap-3">
               <IconCard icon={<FaPhoneAlt />} href="tel:971506045355">
                 +971 50 604 5355
               </IconCard>

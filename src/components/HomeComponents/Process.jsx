@@ -21,12 +21,12 @@ const steps = [
   },
 ];
 
-export default function Process() {
+export default function Process({ visa = 'Visa' }) {
   return (
     <PrimarySection className="mb-15 md:mb-20" id="process">
       <Container>
         <SectionTitle textAlign="center" subtitle="Our Process" className="">
-          Get Your Visa in 4 Easy Steps
+          Get Your {visa} in 4 Easy Steps
         </SectionTitle>
 
         <div className="block gap-5 md:grid md:grid-cols-4 md:m-0 md:p-0">

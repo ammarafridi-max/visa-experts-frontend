@@ -1,4 +1,6 @@
-export default function PrimaryButtonOutline({
+import { Link } from 'react-router-dom';
+
+export default function PrimaryLinkOutline({
   children,
   className = '',
   size = 'medium',
@@ -21,8 +23,8 @@ export default function PrimaryButtonOutline({
   }
 
   return (
-    <button className={newClassName} {...props}>
+    <Link className={newClassName} {...props}>
       {children}
-    </button>
+    </Link>
   );
 }
