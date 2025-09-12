@@ -15,6 +15,8 @@ import {
   HiOutlineIdentification,
 } from 'react-icons/hi2';
 import ContactBanner from '../components/ContactBanner';
+import { FaCheck, FaXmark } from 'react-icons/fa6';
+import PricingCard from '../components/PricingCard';
 
 const visaDetails = {
   name: 'Schengen Visa',
@@ -100,7 +102,7 @@ const visaDetails = {
         'A visa approval is not guaranteed, as it depends on the documents, purpose of travel, and embassy decision. However, with proper guidance and complete documentation, your chances of approval are much higher.',
     },
   ],
-  pricing: [
+  packages: [
     {
       name: 'Basic',
       description:
@@ -308,11 +310,20 @@ function FAQs({ visaDetails }) {
 
 function Pricing({ visaDetails }) {
   return (
-    <PrimarySection className="bg-primary-500 py-15 mb-15 md:mb-20">
+    <PrimarySection className="bg-primary-700 py-15 mb-15 md:mb-20">
       <Container>
-        <SectionTitle textAlign="center" type="secondary" subtitle="Pricing">
+        <SectionTitle
+          textAlign="center"
+          type="secondary"
+          subtitle="Pricing Plans"
+        >
           {visaDetails?.name} Pricing
         </SectionTitle>
+        <div className="flex md:grid md:grid-cols-3 gap-3 overflow-x-scroll">
+          {visaDetails?.packages?.map((pricing) => (
+            <PricingCard pricing={pricing} />
+          ))}
+        </div>
       </Container>
     </PrimarySection>
   );

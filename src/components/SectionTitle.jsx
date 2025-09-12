@@ -17,7 +17,7 @@ export default function SectionTitle({
   }
 
   return (
-    <div className={`mb-10 md:mb-15 ${className}`}>
+    <div className={`mb-8 md:mb-12 ${className}`}>
       {subtitle && <p className={pClassName}>{subtitle}</p>}
       <h2 className={h2ClassName}>{children}</h2>
       {/* <div

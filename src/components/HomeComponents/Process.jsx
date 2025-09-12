@@ -29,10 +29,10 @@ export default function Process({ visa = 'Visa' }) {
           Get Your {visa} in 4 Easy Steps
         </SectionTitle>
 
-        <div className="block gap-5 md:grid md:grid-cols-4 md:m-0 md:p-0">
+        <div className="flex flex-col gap-7 md:grid md:grid-cols-4 md:m-0 md:p-0">
           {steps.map((step, i) => (
             <div
-              className="min-w-full md:min-w-10 max-w-full mb-8 md:mb-0 last-of-type:mb-0 rounded-lg duration-300"
+              className="min-w-full md:min-w-10 max-w-full rounded-lg duration-300"
               key={i}
             >
               <div className="w-10 h-10 bg-primary-100 text-primary-700 text-md font-bold font-outfit flex items-center justify-center rounded-4xl">
