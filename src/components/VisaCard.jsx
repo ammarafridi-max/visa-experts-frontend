@@ -10,10 +10,10 @@ export default function VisaCard({ slug, name, description, src }) {
       <div className="absolute inset-0 flex flex-col justify-end px-5 pb-5 font-outfit bg-gradient-to-t from-black/100 to-transparent duration-300">
         <p className="text-[18px] text-white font-semibold">{name}</p>
         <p className="text-[14px] text-white font-extralight mb-3">
-          {description}
+          {description.slice(0, 60)}...
         </p>
         <PrimaryLinkOutline size="small" to={`visas/${slug}`}>
-          Get More Info
+          Read More
         </PrimaryLinkOutline>
       </div>
     </div>

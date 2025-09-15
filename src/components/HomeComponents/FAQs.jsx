@@ -7,7 +7,7 @@ import PrimaryButton from '../PrimaryButton';
 
 export default function FAQs() {
   return (
-    <PrimarySection className="mb-15 md:mb-20">
+    <PrimarySection className="mb-15 md:mb-20" id="faqs">
       <Container>
         <SectionTitle textAlign="center" subtitle="Frequently Asked Questions">
           Your Visa Questions, Answered Simply

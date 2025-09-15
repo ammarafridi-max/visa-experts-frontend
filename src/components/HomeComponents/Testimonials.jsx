@@ -6,7 +6,7 @@ import TestimonialCard from '../TestimonialCard';
 
 export default function Testimonials() {
   return (
-    <PrimarySection className="mb-15 md:mb-20">
+    <PrimarySection className="mb-15 md:mb-20" id="reviews">
       <Container>
         <SectionTitle subtitle="Testimonials" textAlign="center">
           What our customers say about us

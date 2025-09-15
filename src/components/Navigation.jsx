@@ -3,10 +3,10 @@ import Container from './Container';
 
 export const pages = [
   { name: 'Process', link: '/#process' },
-  { name: 'Services', link: '/#services' },
-  { name: 'Visas', link: '/visas' },
-  { name: 'Why Choose VisaWadi', link: '/#benefits' },
-  { name: 'FAQs', link: '/#faq' },
+  { name: 'Visas', link: '/#visas' },
+  { name: 'Why Choose Us', link: '/#benefits' },
+  { name: 'Reviews', link: '/#reviews' },
+  { name: 'FAQs', link: '/#faqs' },
 ];
 
 export default function Navigation() {

@@ -42,11 +42,14 @@ export default function Footer() {
               <IconCard icon={<FaPhoneAlt />} href="tel:971506045355">
                 +971 50 604 5355
               </IconCard>
-              <IconCard icon={<FaWhatsapp />} href="mailto">
+              <IconCard
+                icon={<FaWhatsapp />}
+                href={`https://wa.me/971506045355?text=${'Hi VisaWadi, I need assistance with a visa.'.split(' ').join('%20')}`}
+              >
                 WhatsApp Us
               </IconCard>
-              <IconCard icon={<FaEnvelope />} href="mailto">
-                info@visaexperts.ae
+              <IconCard icon={<FaEnvelope />} href="mailto:info@visawadi.com">
+                info@visawadi.com
               </IconCard>
               <IconCard icon={<FaMapPin />} href="mailto">
                 A Block, Abraj Al Mamzar
@@ -99,9 +102,13 @@ function FooterLink({ href, children }) {
   );
 }
 
-function IconCard({ icon, href, children }) {
+function IconCard({ icon, href, children, target }) {
   return (
-    <a href={href} className="flex items-center gap-3 leading-6 group">
+    <a
+      href={href}
+      className="flex items-center gap-3 leading-6 group"
+      target="_blank"
+    >
       <span className="bg-primary-500 w-[30px] h-[30px] rounded-full flex items-center justify-center text-sm duration-300 group-hover:bg-primary-600">
         {icon}
       </span>

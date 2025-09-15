@@ -1,7 +1,7 @@
 import { FaCheck, FaXmark } from 'react-icons/fa6';
-import PrimaryButton from './PrimaryButton';
+import PrimaryLink from './PrimaryLink';
 
-export default function PricingCard({ pricing }) {
+export default function PricingCard({ visaDetails, pricing }) {
   return (
     <div
       className={`min-w-[320px] md:w-full flex flex-col justify-between rounded-3xl px-7 py-7 font-outfit ${pricing.recommended ? 'bg-white' : 'bg-white'}`}
@@ -49,9 +49,14 @@ export default function PricingCard({ pricing }) {
           </p>
         </div>
       </div>
-      <PrimaryButton size="medium" className="w-full">
+      <PrimaryLink
+        size="medium"
+        className="w-full"
+        target="_blank"
+        to={`https://wa.me/971506045355?text=Hi%20VisaWadi,%20I%20need%20more%20information%20about%20${pricing?.name}%20package%20for%20${visaDetails?.name?.split(' ').join('%20')}.`}
+      >
         Chat With Us Now
-      </PrimaryButton>
+      </PrimaryLink>
     </div>
   );
 }
