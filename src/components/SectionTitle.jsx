@@ -6,7 +6,7 @@ export default function SectionTitle({
   type = 'primary',
 }) {
   let pClassName = `w-fit text-[12px] md:text-[14px] font-medium font-outfit uppercase py-1.5 px-4 rounded-lg text-left mb-2 ${textAlign === 'center' ? 'md:mx-auto' : 'md:ml-auto'}`;
-  let h2ClassName = `text-[26px] md:text-[32px] font-normal font-outfit text-left leading-9 capitalize ${textAlign === 'center' ? 'md:text-center' : 'md:text-left'}`;
+  let h2ClassName = `text-[26px] md:text-[32px] font-medium font-outfit text-left leading-9 capitalize ${textAlign === 'center' ? 'md:text-center' : 'md:text-left'}`;
 
   if (type === 'secondary') {
     pClassName = pClassName + ' bg-primary-50 text-primary-500';

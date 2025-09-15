@@ -19,17 +19,20 @@ import PricingCard from '../components/PricingCard';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { visas } from '../data/visas';
+import { useVisa } from '../data/useVisa';
 
 export default function VisaDetail() {
   const { slug } = useParams();
-  const [visaDetails, setVisaDetails] = useState({});
-  useEffect(() => {
-    visas.find((visa) => {
-      if (visa?.slug === slug) {
-        setVisaDetails(visa);
-      }
-    });
-  }, [slug]);
+  // const [visaDetails, setVisaDetails] = useState({});
+  const { visaDetails } = useVisa(slug);
+
+  // useEffect(() => {
+  //   visas.find((visa) => {
+  //     if (visa?.slug === slug) {
+  //       setVisaDetails(visa);
+  //     }
+  //   });
+  // }, [slug]);
 
   return (
     <>

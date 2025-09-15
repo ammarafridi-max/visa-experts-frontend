@@ -3,6 +3,9 @@ import Container from '../Container';
 import PageTitle from '../PageTitle';
 import PrimaryButton from '../PrimaryButton';
 import PrimaryButtonOutline from '../PrimaryButtonOutline';
+import { getVisaApi, getVisasApi } from '../../services/apiVisas';
+import { useEffect } from 'react';
+import { useVisas } from '../../data/useVisas';
 
 export default function Hero({
   title = 'Hassle-Free Visa Assistance for Schengen, US, UK & More.',

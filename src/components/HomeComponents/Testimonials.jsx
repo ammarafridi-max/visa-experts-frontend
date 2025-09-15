@@ -12,8 +12,9 @@ export default function Testimonials() {
           What our customers say about us
         </SectionTitle>
         <div className="flex gap-5 overflow-x-scroll">
-          {testimonials.map((test) => (
+          {testimonials?.map((test, i) => (
             <TestimonialCard
+              key={i}
               title={test.title}
               name={test.name}
               purpose={test.purpose}
