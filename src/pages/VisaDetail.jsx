@@ -1,3 +1,11 @@
+import {
+  HiOutlineCalendarDays,
+  HiOutlineClock,
+  HiOutlineGlobeEuropeAfrica,
+  HiOutlineIdentification,
+} from 'react-icons/hi2';
+import { useParams } from 'react-router-dom';
+import { useVisa } from '../data/useVisa';
 import PrimarySection from '../components/PrimarySection';
 import Container from '../components/Container';
 import Benefits from '../components/HomeComponents/Benefits';
@@ -8,31 +16,15 @@ import PrimaryLink from '../components/PrimaryLink';
 import TestimonialCard from '../components/TestimonialCard';
 import SectionTitle from '../components/SectionTitle';
 import FAQAccordion from '../components/FAQAccordion';
-import {
-  HiOutlineCalendarDays,
-  HiOutlineClock,
-  HiOutlineGlobeEuropeAfrica,
-  HiOutlineIdentification,
-} from 'react-icons/hi2';
 import ContactBanner from '../components/ContactBanner';
 import PricingCard from '../components/PricingCard';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { visas } from '../data/visas';
-import { useVisa } from '../data/useVisa';
+import Loading from '../components/Loading';
 
 export default function VisaDetail() {
   const { slug } = useParams();
-  // const [visaDetails, setVisaDetails] = useState({});
-  const { visaDetails } = useVisa(slug);
+  const { visaDetails, isLoadingVisa } = useVisa(slug);
 
-  // useEffect(() => {
-  //   visas.find((visa) => {
-  //     if (visa?.slug === slug) {
-  //       setVisaDetails(visa);
-  //     }
-  //   });
-  // }, [slug]);
+  if (isLoadingVisa) return <Loading />;
 
   return (
     <>
