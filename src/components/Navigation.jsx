@@ -14,14 +14,14 @@ export default function Navigation() {
     <header className="hidden lg:block relative z-50 bg-transparent py-2 shadow-md">
       <Container>
         <nav className="flex items-center justify-between py-1.25">
-          <div className="w-[21%] p-0">
+          <div className="w-[15%] p-0">
             <a href="/">
-              {/* <img
-                src="/logo.webp"
+              <img
+                src="/logo-light.png"
                 alt="My Dummy Ticket Logo"
                 title="My Dummy Ticket Logo"
                 className="w-full h-full object-contain"
-              /> */}
+              />
             </a>
           </div>
           <div className="w-auto flex items-center justify-between gap-5">

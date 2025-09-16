@@ -10,13 +10,26 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa';
 import Container from './Container';
+import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
     <footer className="py-5 bg-primary-900">
       <Container className="py-7.5 bg-transparent box-border font-outfit">
-        <div className="grid grid-cols-6 md:flex justify-between gap-8 mb-10">
-          <div className="col-span-6 md:w-[20%]"></div>
+        <div className="grid grid-cols-6 md:flex justify-between gap-8 mb-10 text-white">
+          <div className="col-span-6 md:w-[33%] flex flex-col gap-5">
+            <img src="/logo-dark.png" className="w-[150px]" />
+            <p className="text-white text-md md:text-lg font-extralight leading-6">
+              VisaWadi provides reliable and hassle-free visa services,
+              specializing in Schengen, UK, US, and other international visas.
+              We make the process simple, transparent, and stress-free so you
+              can focus on your travel plans.
+            </p>
+            <div className="flex gap-2">
+              <IconCard icon={<FaFacebook />} href="tel:971506045355" />
+              <IconCard icon={<FaInstagram />} href="tel:971506045355" />
+            </div>
+          </div>
           <div className="col-span-3 md:w-fit">
             <p className="text-xl text-white">Site Links</p>
             <div className="flex flex-col mt-4 text-white text-md md:text-lg font-extralight gap-0.5">
@@ -51,7 +64,10 @@ export default function Footer() {
               <IconCard icon={<FaEnvelope />} href="mailto:info@visawadi.com">
                 info@visawadi.com
               </IconCard>
-              <IconCard icon={<FaMapPin />} href="mailto">
+              <IconCard
+                icon={<FaMapPin />}
+                href="https://maps.google.com?q=A Block, Abraj Al Mamzar"
+              >
                 A Block, Abraj Al Mamzar
               </IconCard>
             </div>
@@ -91,7 +107,7 @@ const icons = [
   <FaCcMastercard />,
 ];
 
-function FooterLink({ href, children }) {
+function FooterLink({ href = '#', children }) {
   return (
     <a href={href} className="cursor-pointer group hover:text-primary-100">
       <span className="text-primary-100 mr-4 font-bold duration-300 group-hover:text-primary-500">
@@ -112,7 +128,7 @@ function IconCard({ icon, href, children, target }) {
       <span className="bg-primary-500 w-[30px] h-[30px] rounded-full flex items-center justify-center text-sm duration-300 group-hover:bg-primary-600">
         {icon}
       </span>
-      <p>{children}</p>
+      {children && <p>{children}</p>}
     </a>
   );
 }
