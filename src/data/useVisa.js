@@ -13,7 +13,7 @@ export function useVisa(slug) {
   });
 
   return {
-    visaDetails: data?.data?.visa,
+    visaDetails: data?.data,
     isLoadingVisa,
     isErrorVisa,
   };

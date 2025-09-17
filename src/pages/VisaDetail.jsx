@@ -140,8 +140,9 @@ function Testimonials({ visaDetails }) {
           What our customers say about us
         </SectionTitle>
         <div className="flex md:grid md:grid-cols-3 gap-5 overflow-x-scroll">
-          {visaDetails?.testimonials?.map((test) => (
+          {visaDetails?.testimonials?.map((test, i) => (
             <TestimonialCard
+              key={i}
               name={test?.name}
               title={test?.title}
               purpose={test?.purpose}
@@ -186,8 +187,8 @@ function Pricing({ visaDetails }) {
           {visaDetails?.name} Pricing
         </SectionTitle>
         <div className="flex md:grid md:grid-cols-3 gap-3 overflow-x-scroll">
-          {visaDetails?.packages?.map((pricing) => (
-            <PricingCard visaDetails={visaDetails} pricing={pricing} />
+          {visaDetails?.packages?.map((pricing, i) => (
+            <PricingCard key={i} visaDetails={visaDetails} pricing={pricing} />
           ))}
         </div>
       </Container>

@@ -14,7 +14,7 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className="py-5 bg-primary-900">
+    <footer className="py-5 bg-primary-800">
       <Container className="py-7.5 bg-transparent box-border font-outfit">
         <div className="grid grid-cols-6 md:flex justify-between gap-8 mb-10 text-white">
           <div className="col-span-6 md:w-[33%] flex flex-col gap-5">

@@ -3,9 +3,10 @@ import Container from '../Container';
 import PrimarySection from '../PrimarySection';
 import SectionTitle from '../SectionTitle';
 import VisaCard from '../VisaCard';
+import VisaCardLoading from '../VisaCardLoading';
 
 export default function Visas() {
-  const { visas } = useVisas();
+  const { visas, isLoadingVisas } = useVisas();
 
   return (
     <PrimarySection className="mb-15 md:mb-20" id="visas">
@@ -18,6 +19,14 @@ export default function Visas() {
           Visas We Can Help You With
         </SectionTitle>
         <div className="flex md:grid md:grid-cols-4 items-center justify-between gap-5 overflow-scroll">
+          {isLoadingVisas && (
+            <>
+              <VisaCardLoading />
+              <VisaCardLoading />
+              <VisaCardLoading />
+              <VisaCardLoading />
+            </>
+          )}
           {visas?.map((visa, i) => (
             <VisaCard
               key={i}

@@ -12,7 +12,7 @@ export function useVisas() {
   });
 
   return {
-    visas: data?.data?.visas,
+    visas: data?.data,
     isLoadingVisas,
     isErrorVisas,
   };
